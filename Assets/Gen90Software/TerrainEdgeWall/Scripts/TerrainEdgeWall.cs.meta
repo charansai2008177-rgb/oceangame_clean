@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 812658b72e91bf04caed6d574e235be1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 354454
+  packageName: Terrain Edge Wall
+  packageVersion: 1.0.0
+  assetPath: Assets/Gen90Software/TerrainEdgeWall/Scripts/TerrainEdgeWall.cs
+  uploadId: 844672

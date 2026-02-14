@@ -11,8 +11,8 @@ ScriptedImporter:
   editorImportSettings:
     generateSecondaryUVSet: 1
   importSettings:
-    nodeNameMethod: 0
-    animationMethod: 1
+    nodeNameMethod: 1
+    animationMethod: 2
     generateMipMaps: 1
     texturesReadable: 1
     defaultMinFilterMode: 9729
