@@ -13,6 +13,12 @@
       },
       "hash": "fea7bce0c0fa60d872fa8eeb4caea944f6c407d4"
     },
+    "com.jbooth.microsplat.core": {
+      "version": "file:com.jbooth.microsplat.core",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.9",
       "depth": 0,

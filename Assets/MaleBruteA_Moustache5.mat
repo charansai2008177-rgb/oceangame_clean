@@ -48,6 +48,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _QueueControl: 1
+    - metallicFactor: 0
+    - roughnessFactor: 0
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
