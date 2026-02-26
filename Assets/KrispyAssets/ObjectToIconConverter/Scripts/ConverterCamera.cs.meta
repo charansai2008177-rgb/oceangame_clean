@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a5b9808c65d381344b0f1c71d2039b85
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281064
+  packageName: Object To Icon Converter
+  packageVersion: 1.0
+  assetPath: Assets/KrispyAssets/ObjectToIconConverter/Scripts/ConverterCamera.cs
+  uploadId: 804040

@@ -2,28 +2,31 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using Unity.VisualScripting;
-using JetBrains.Annotations;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 
-public class slots : MonoBehaviour
+public class slots : MonoBehaviour,IPointerEnterHandler, IPointerExitHandler
 {
     public bool hovering;
     private itemso helditem;
     private int itemamount;
     private Image iconimage;
-    private TextMeshProUGUI amounttext;
+    private TextMeshProUGUI amountTxt;
 
     private void Awake()
     {
         iconimage = transform.GetChild(0).GetComponent<Image>();
-        amounttext = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
-
+        amountTxt = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        // No need to set icon here; Updateslot() will handle it.
     }
 
-    public itemso GetItem() { return helditem;
+    public itemso GetItem()
+    {
+        return helditem;
     }
-    public int GetAmount() { return itemamount;
+    public int GetAmount()
+    {
+        return itemamount;
     }
     public void SetItem(itemso item, int amount = 1)
     {
@@ -31,35 +34,66 @@ public class slots : MonoBehaviour
         itemamount = amount;
 
         Updateslot();
+    }
 
 
-            public void Updateslot()
+    public void Updateslot()
     {
         if (helditem != null)
         {
-            iconimage.sprite = helditem.icon;
             iconimage.enabled = true;
-            if (itemamount > 1)
-            {
-                amounttext.text = itemamount.ToString();
-                amounttext.enabled = true;
-            }
-            else
-            {
-                amounttext.enabled = false;
-            }
+            iconimage.sprite = helditem.icon;
+            amountTxt.text = itemamount.ToString();
+
         }
         else
         {
-            iconimage.sprite = null;
             iconimage.enabled = false;
-            amounttext.enabled = false;
+            amountTxt.text = "";
         }
     }
-
-
-}
+    public int AddAmount(int amountToAdd)
+    {
+        itemamount += amountToAdd;
+        Updateslot();
+        return itemamount;
     }
+    public int RemoveAmount(int amountToRemove)
+    {
+        itemamount -= amountToRemove;
+        if (itemamount <= 0)
+        {
+            Clearslot();
+        }
+        else
+        {
+            Updateslot();
+        }
+        return itemamount;
+
+    }
+    public void Clearslot()
+    {
+        helditem = null;
+        itemamount = 0;
+        Updateslot();
+
+    }
+    public bool hasItem()
+    {
+        return helditem != null;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+    hovering = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        hovering = false;
+    }
+}
 
 
        

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 84a4cd02a6d13eb43a14df562ae915b6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281064
+  packageName: Object To Icon Converter
+  packageVersion: 1.0
+  assetPath: Assets/KrispyAssets/ObjectToIconConverter/Scripts/CaptureTarget.cs
+  uploadId: 804040

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 323fbb4b774d389429170898ea323739
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 281064
+  packageName: Object To Icon Converter
+  packageVersion: 1.0
+  assetPath: Assets/KrispyAssets/ObjectToIconConverter/Scripts/ObjectToIconConverter.cs
+  uploadId: 804040

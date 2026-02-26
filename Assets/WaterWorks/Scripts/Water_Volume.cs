@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.Rendering.Universal.Internal;
+
 
 // Note: Removed 'UnityEngine.Experimental.Rendering.Universal' as RTHandle is now stable
 // and often available directly under UnityEngine.Rendering.Universal.
@@ -37,8 +39,8 @@ public class Water_Volume : ScriptableRendererFeature
             if (renderingData.cameraData.cameraType != CameraType.Reflection)
             {
                 CommandBuffer commandBuffer = CommandBufferPool.Get(ProfilerTag);
-                Blit(commandBuffer, sourceHandle, _temporaryRT, _material, 0);
-                Blit(commandBuffer, _temporaryRT, sourceHandle);
+                Blitter.BlitCameraTexture(commandBuffer, sourceHandle, _temporaryRT, _material, 0);
+                Blitter.BlitCameraTexture(commandBuffer, _temporaryRT, sourceHandle);
                 context.ExecuteCommandBuffer(commandBuffer);
                 CommandBufferPool.Release(commandBuffer);
             }
