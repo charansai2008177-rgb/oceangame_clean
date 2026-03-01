@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 87ef5d0be5889624eb91ed4b701cec34
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333604
+  packageName: Drag & Drop Inventory & Hotbar Framework
+  packageVersion: 1.0.0
+  assetPath: Assets/Jinxish/Drag & Drop Inventory & Hotbar Framework/ScriptableObjects/Items/Axe.asset
+  uploadId: 824934

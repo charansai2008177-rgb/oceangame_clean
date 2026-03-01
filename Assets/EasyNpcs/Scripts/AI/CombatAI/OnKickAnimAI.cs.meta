@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 106951bf4c3e80d4b9f49de9aa8e6346
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Scripts/AI/CombatAI/OnKickAnimAI.cs
+  uploadId: 622450

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c0ecf631f016b6b49ac6cc6693ba1b5c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Animations/NpcCon.controller
+  uploadId: 622450

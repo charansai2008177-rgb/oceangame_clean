@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 93acc7cf6de66ba4fadadc01354af21a
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/DIalogue/Scripts/Dialogue.asmdef
+  uploadId: 622450

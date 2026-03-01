@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1243b6ca718514944b0319549d8a4489
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/DIalogue/VisualScripts/DIalogueConnecter.asset
+  uploadId: 622450

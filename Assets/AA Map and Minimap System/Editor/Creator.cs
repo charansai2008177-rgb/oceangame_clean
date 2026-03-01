@@ -522,7 +522,7 @@ namespace AAMAP
         /// </summary>
         private static string GetCurrentRenderPipeline()
         {
-            RenderPipelineAsset renderPipelineAsset = GraphicsSettings.renderPipelineAsset;
+            RenderPipelineAsset renderPipelineAsset = GraphicsSettings.defaultRenderPipeline;
 
             if (renderPipelineAsset)
             {

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a6b352aaea2f76d449c82dd4e3e683f2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Scripts/AI/CombatAI/AttackHandler.cs
+  uploadId: 622450

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4ce84e2bb6cc3934a806d93706355cf0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333604
+  packageName: Drag & Drop Inventory & Hotbar Framework
+  packageVersion: 1.0.0
+  assetPath: Assets/Jinxish/Drag & Drop Inventory & Hotbar Framework/Prefabs/Player.prefab
+  uploadId: 824934

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a9dfcacd4a02cbe4b84c878b4cace358
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Scripts/AI/NpcAI/Conversation.cs
+  uploadId: 622450

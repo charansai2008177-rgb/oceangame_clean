@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e1224572e8850c64ebb8ac68fa678b07
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Managers/Day and Night Controller.prefab
+  uploadId: 622450

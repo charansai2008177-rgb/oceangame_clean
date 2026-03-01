@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a79034bb8e7f5344ba21001ffb5b7b49
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/DIalogue/VisualScripts/DialogueDivider.asset
+  uploadId: 622450

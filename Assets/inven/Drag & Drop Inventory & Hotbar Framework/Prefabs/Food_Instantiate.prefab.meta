@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a450add9d6bd2d84084be0ee150a5f1f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333604
+  packageName: Drag & Drop Inventory & Hotbar Framework
+  packageVersion: 1.0.0
+  assetPath: Assets/Jinxish/Drag & Drop Inventory & Hotbar Framework/Prefabs/Food_Instantiate.prefab
+  uploadId: 824934

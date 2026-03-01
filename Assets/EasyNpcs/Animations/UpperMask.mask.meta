@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a05b43e3acbccaa41b549ba4b00da33f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Animations/UpperMask.mask
+  uploadId: 622450

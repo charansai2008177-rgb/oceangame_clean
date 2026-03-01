@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 11b7b7ea8c2f2ad4ea7642da4ec0a416
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Scripts/Stats.cs
+  uploadId: 622450

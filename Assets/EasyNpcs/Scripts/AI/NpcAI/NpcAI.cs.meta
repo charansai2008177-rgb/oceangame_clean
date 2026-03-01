@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 096c17a238bc7e946806a109840208bb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Scripts/AI/NpcAI/NpcAI.cs
+  uploadId: 622450

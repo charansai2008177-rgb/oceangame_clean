@@ -1,0 +1,17 @@
+{
+    "name": "AI Package",
+    "rootNamespace": "",
+    "references": [
+        "Unity.Animation.Rigging",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

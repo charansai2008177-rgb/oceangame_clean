@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 109b977292cee61418439438a04e23c1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333604
+  packageName: Drag & Drop Inventory & Hotbar Framework
+  packageVersion: 1.0.0
+  assetPath: Assets/Jinxish/Drag & Drop Inventory & Hotbar Framework/Prefabs/Slot.prefab
+  uploadId: 824934

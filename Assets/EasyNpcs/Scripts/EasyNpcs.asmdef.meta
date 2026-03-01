@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c557af6f2c47e144b8ee7b9b6367ed76
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Scripts/EasyNpcs.asmdef
+  uploadId: 622450

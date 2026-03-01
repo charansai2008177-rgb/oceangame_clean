@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8291c7b5afd04a84abd79a3e03e32ffe
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Scripts/AI/CombatAI/OnBlockImpact_Anim.cs
+  uploadId: 622450

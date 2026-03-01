@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bc2143407d4878746bd8a8310426c903
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333604
+  packageName: Drag & Drop Inventory & Hotbar Framework
+  packageVersion: 1.0.0
+  assetPath: Assets/Jinxish/Drag & Drop Inventory & Hotbar Framework/readme.md
+  uploadId: 824934

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a54a6d78869e166408f4bac6bb9e3745
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 23800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Scenes/Player_Attack/NavMesh.asset
+  uploadId: 622450

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9253da5f5fd3c484cbdbc75ba2552b92
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333604
+  packageName: Drag & Drop Inventory & Hotbar Framework
+  packageVersion: 1.0.0
+  assetPath: Assets/Jinxish/Drag & Drop Inventory & Hotbar Framework/ScriptableObjects/Items/Carrot.asset
+  uploadId: 824934

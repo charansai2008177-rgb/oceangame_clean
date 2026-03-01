@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 307fa2b5c34fb7f43ac785d9bf4a267d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Player/CameraCon.cs
+  uploadId: 622450

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de710cc37b178ac41bdc90fbef7a5c3b, type: 3}
+  m_Name: Potion
+  m_EditorClassIdentifier: 
+  id: 3
+  itemName: Potion
+  description: A potion that heals you
+  icon: {fileID: 21300000, guid: 19c036ead2e6e7643b551d01551059f7, type: 3}
+  maxStack: 16
+  model: {fileID: 6089524035156570816, guid: 839b25543bc3be549beee147400b6165, type: 3}

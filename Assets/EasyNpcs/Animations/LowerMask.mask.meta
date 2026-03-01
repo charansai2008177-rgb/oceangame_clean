@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6ab65f4efe5ad154182f538d7637e6f5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Animations/LowerMask.mask
+  uploadId: 622450

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2cf93cb04a2f8964a9b6946d3f39ce30
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/DIalogue/Scripts/DialogueDivider.cs
+  uploadId: 622450

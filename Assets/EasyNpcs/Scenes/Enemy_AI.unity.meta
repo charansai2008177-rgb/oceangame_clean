@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: deb3ea5a960a04a4d99fb781085c87e7
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211894
+  packageName: Easy npcs
+  packageVersion: 1.0.2
+  assetPath: Assets/EasyNpcs/Scenes/Enemy_AI.unity
+  uploadId: 622450
