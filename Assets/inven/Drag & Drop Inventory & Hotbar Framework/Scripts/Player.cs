@@ -4,35 +4,48 @@ namespace InventoryFramework
 {
     public class Player : MonoBehaviour
     {
-        public FPSController fPSController;
+        public MonoBehaviour movementController; // Drag your ThirdPersonController here
         public GameObject inventory;
+
+        private bool inventoryOpen = false;
 
         void Start()
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            LockCursor(true);
         }
-
 
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                fPSController.canMove = !fPSController.canMove;
-                inventory.SetActive(!inventory.activeSelf);
+                ToggleInventory();
+            }
+        }
 
-                if (fPSController.canMove)
-                {
-                    Cursor.lockState = CursorLockMode.Locked;
-                    Cursor.visible = false;
-                }
-                else
-                {
-                    Cursor.lockState = CursorLockMode.None;
-                    Cursor.visible = true;
-                }
+        void ToggleInventory()
+        {
+            inventoryOpen = !inventoryOpen;
+
+            inventory.SetActive(inventoryOpen);
+
+            if (movementController != null)
+                movementController.enabled = !inventoryOpen;
+
+            LockCursor(!inventoryOpen);
+        }
+
+        void LockCursor(bool lockState)
+        {
+            if (lockState)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
         }
     }
 }
-
