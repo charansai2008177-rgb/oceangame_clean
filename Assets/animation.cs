@@ -12,7 +12,7 @@ public class animation : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (animator != null)
                 animator.SetTrigger("chop");
