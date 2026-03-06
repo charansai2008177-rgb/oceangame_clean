@@ -15,6 +15,6 @@ MonoBehaviour:
   id: 0
   itemName: wood
   description: basic building model
-  icon: {fileID: -3117552401760922421, guid: fc2c96f1421fbe54e82922ae89afef74, type: 3}
+  icon: {fileID: 2071443655879868920, guid: 252d1f9f9eb6dfe46873735361f596d6, type: 3}
   maxStack: 10
   model: {fileID: 0}
