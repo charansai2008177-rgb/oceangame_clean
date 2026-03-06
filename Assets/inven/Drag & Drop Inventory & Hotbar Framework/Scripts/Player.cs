@@ -6,8 +6,10 @@ namespace InventoryFramework
     {
         public MonoBehaviour movementController; // Drag your ThirdPersonController here
         public GameObject inventory;
+        public GameObject desk;
 
         private bool inventoryOpen = false;
+        private bool deskOpen = false;
 
         void Start()
         {
@@ -25,8 +27,10 @@ namespace InventoryFramework
         void ToggleInventory()
         {
             inventoryOpen = !inventoryOpen;
+            deskOpen = !deskOpen;
 
             inventory.SetActive(inventoryOpen);
+            desk.SetActive(deskOpen);
 
             if (movementController != null)
                 movementController.enabled = !inventoryOpen;
