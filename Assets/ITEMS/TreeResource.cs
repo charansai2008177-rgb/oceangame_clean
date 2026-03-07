@@ -5,6 +5,8 @@ public class TreeResource : MonoBehaviour
 {
     public Item woodItem;
     public int woodAmount = 3;
+    private Animator playerAnimator;
+    public GameObject Player;
 
     public ChopUI chopUI;
     public float chopTime = 3f;
@@ -38,6 +40,11 @@ public class TreeResource : MonoBehaviour
 
         if (playerNearby && Input.GetKey(KeyCode.E))
         {
+            if (playerAnimator != null)
+            {
+                playerAnimator.SetTrigger("chop");
+            }
+
             chopping = true;
 
             timer += Time.deltaTime;
@@ -116,7 +123,10 @@ public class TreeResource : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNearby = true;
+
             playerInventory = other.GetComponent<ItemPickupHandler>();
+
+            playerAnimator = other.GetComponent<Animator>();
         }
     }
 
