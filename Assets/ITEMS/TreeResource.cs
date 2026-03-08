@@ -3,54 +3,54 @@ using UnityEngine;
 
 public class TreeResource : MonoBehaviour
 {
+    [Header("Items")]
     public Item woodItem;
     public int woodAmount = 3;
-    private Animator playerAnimator;
-    public GameObject Player;
 
-    public ChopUI chopUI;
+    [Header("Prefabs")]
+    public GameObject fallingTreePrefab;
+
+    [Header("UI")]
+    public InteractionUi interactUI;
+
+    [Header("Settings")]
     public float chopTime = 3f;
-
-    public float respawnTime = 30f;   // time for tree to grow again
+    public float respawnTime = 30f;
 
     private bool playerNearby = false;
+    private bool treeChopped = false;
+
     private float timer = 0f;
 
-    private bool treeChopped = false;
-    private bool chopping = false;
-
+    private Animator playerAnimator;
     private ItemPickupHandler playerInventory;
 
-    private Rigidbody rb;
-    private Collider treeCollider;
     private MeshRenderer treeRenderer;
+    private Collider treeCollider;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        treeCollider = GetComponent<Collider>();
         treeRenderer = GetComponent<MeshRenderer>();
-
-        rb.isKinematic = true;
+        treeCollider = GetComponent<Collider>();
     }
 
     void Update()
     {
         if (treeChopped) return;
 
+        if (playerNearby)
+        {
+            interactUI.gameObject.SetActive(true);
+        }
+
         if (playerNearby && Input.GetKey(KeyCode.E))
         {
-            if (playerAnimator != null)
-            {
-                playerAnimator.SetTrigger("chop");
-            }
-
-            chopping = true;
-
             timer += Time.deltaTime;
 
-            chopUI.gameObject.SetActive(true);
-            chopUI.UpdateBar(timer / chopTime);
+            interactUI.UpdateFill(timer / chopTime);
+
+            if (playerAnimator != null)
+                playerAnimator.SetTrigger("chop");
 
             if (timer >= chopTime)
             {
@@ -64,68 +64,64 @@ public class TreeResource : MonoBehaviour
         }
     }
 
-    void ResetChop()
-    {
-        timer = 0f;
-        chopping = false;
-        chopUI.gameObject.SetActive(false);
-    }
-
     void ChopTree()
     {
+        if (treeChopped) return;
         treeChopped = true;
 
-        ResetChop();
+        // 1. Hide the tree instantly
+        treeRenderer.enabled = false;
+        treeCollider.enabled = false;
+        interactUI.gameObject.SetActive(false);
 
+        // 2. Give the wood
         if (playerInventory != null)
         {
             playerInventory.PickupItem(woodItem, woodAmount);
         }
 
-        // Enable physics for falling tree
-        rb.isKinematic = false;
 
-        rb.AddForce(transform.right * 500f, ForceMode.Impulse);
-        rb.AddTorque(Vector3.forward * 200f, ForceMode.Impulse);
-
-        // disable interaction
-        treeCollider.enabled = false;
-
-        // start respawn
+        // 4. Start the respawn timer
         Invoke(nameof(RespawnTree), respawnTime);
+    }
+
+    void HideTreeVisuals()
+    {
+        treeRenderer.enabled = false;
     }
 
     void RespawnTree()
     {
-        // hide tree while respawning
-        treeRenderer.enabled = false;
-
-        rb.isKinematic = true;
-        rb.linearVelocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
-
-        transform.rotation = Quaternion.identity;
-
-        Invoke(nameof(EnableTree), 2f);
-    }
-
-    void EnableTree()
-    {
+        // Reset everything for the next round
         treeRenderer.enabled = true;
         treeCollider.enabled = true;
-
         treeChopped = false;
+
+        // Reset the animation to Idle
+        Animator treeAnim = GetComponent<Animator>();
+        treeAnim.Play("TreeIdle");
+    }
+
+    void ResetChop()
+    {
         timer = 0f;
+        interactUI.ResetFill();
     }
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Axe"))
+        {
+            // Tell the tree to shake!
+            GetComponent<TreeShake>().TriggerShake();
+
+            // Optional: Play a "thwack" sound effect here
+        }
         if (other.CompareTag("Player"))
         {
             playerNearby = true;
 
             playerInventory = other.GetComponent<ItemPickupHandler>();
-
             playerAnimator = other.GetComponent<Animator>();
         }
     }
@@ -135,6 +131,7 @@ public class TreeResource : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNearby = false;
+            interactUI.gameObject.SetActive(false);
             ResetChop();
         }
     }
